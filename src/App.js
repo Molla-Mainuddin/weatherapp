@@ -8,7 +8,6 @@ import Datetime from './components/Datetime';
 import DataNotfound from './components/DataNotfound';
 import Connection from './components/Connection';
 
-
 const App = ()=> {
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
@@ -92,6 +91,7 @@ const App = ()=> {
     .then((res)=> res.json())
     .then((result2)=>{
       setforecastData(result2);
+      console.log(result2);
     });
   };
 

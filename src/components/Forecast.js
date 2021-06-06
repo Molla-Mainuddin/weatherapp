@@ -13,7 +13,7 @@ const Forecast = (props)=>{
                             <div className="card" key={index}>
                                 <div className="forecast-weather">
                                     <p>{Math.trunc(val.main.temp)}&deg;C</p>
-                                    <img className="forecastweather-img" src={process.env.PUBLIC_URL+`/images/${val.weather[0].icon}.png`} alt="Notfound"/>
+                                    <img className="forecastweather-img" src={process.env.REACT_APP_ICON_URL+`/${val.weather[0].icon}.png`} alt="Notfound"/>
                                     <p>{val.weather[0].description}</p>
                                 </div>
                                 <div className="day-time">

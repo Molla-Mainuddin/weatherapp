@@ -5,7 +5,11 @@ const Footer = ()=>{
     return(
         <>
             <footer className="footer">
-                <h6 className="text-center">&#169; Copyright 2021, Designed by Molla Mainuddin</h6>
+                <div className="footer-content">
+                    <h6 className="text">&#169; Copyright 2021, Designed by Molla Mainuddin</h6>
+                    <a href="https://github.com/Molla-Mainuddin"><i className="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/molla-mainuddin"><i className="fab fa-linkedin"></i></a>
+                </div>
             </footer>
         </>
     );
