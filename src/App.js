@@ -102,16 +102,12 @@ const App = ()=> {
 
 
 
-  if(!navigator.onLine){
-    return <Connection />;
-  }
-
+  
 
   return (
       <>
-         <Navbar searchfunc={searchData} inputValue={city} buttonFunc={buttonClicked}/>
-
           <div className="body">
+            <Navbar searchfunc={searchData} inputValue={city} buttonFunc={buttonClicked}/>
             <Datetime currentDate={date} />
             <div className="app">
 

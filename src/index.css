@@ -15,6 +15,7 @@
     background-color: #3d3a3a;
     position: fixed;
     display: flex;
+    z-index: 1;
 }
 
 .nav-item{
@@ -74,17 +75,17 @@
 .body{
     height: 865px;
     width: 100%;
-    padding-top: 60px;
     background-image: url('https://images.pexels.com/photos/259620/pexels-photo-259620.jpeg?cs=srgb&dl=pexels-pixabay-259620.jpg&fm=jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
+    z-index: -1;
 }
 
 .date-time{
     height: 45px;
     width: 100%;
     text-align: center;
-    padding: 70px 0px 35px 0px;
+    padding: 90px 0px 35px 0px;
 }
 
 .date-time .date{
@@ -108,6 +109,9 @@
     border-radius: 15px;
     box-shadow: 0px 13px 10px -7px rgba(0,0,0,0.1);
     border: 2px solid whitesmoke;
+    background-color: #067faf;
+    opacity: 0.9;
+    z-index: 0;
 }
 
 .main-header{
@@ -181,18 +185,35 @@
     overflow-y: auto;
     border: 2px solid whitesmoke;
 }
-.forecast::-webkit-scrollbar {
-    display: none;
-}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #646161; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #646161; 
+  }
 
 .card{
     margin: 30px 0px 70px 70px;
     transition: all 0.4s cubic-bezier(0.175,0.885,0,1);
-    background-color: transparent;
     width: 23%;
+    background-color: #067faf;
+    opacity: 0.9;
     border-radius: 12px;
     box-shadow: 0px 13px 10px -7px rgba(0,0,0,0.1);
-    border: 1px solid whitesmoke;
     float: left;
 }
 
@@ -291,6 +312,3 @@
 .fa-linkedin:hover{
     color: whitesmoke;
 }
-
-/*--------------------- Responseive style ----------------------*/
-
